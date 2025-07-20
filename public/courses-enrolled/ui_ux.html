@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro | UI/UX Design</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>Loading, preparing your course please wait...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+        <div class="d-flex align-items-center">
+            <a href="javascript:history.back()" class="btn btn-light me-3"><i class="fas fa-arrow-left"></i></a>
+            <a href="../index.html" class="text-decoration-none" style="display:inline-flex;">
+                <img src="../assets/images/logo.png" alt="logo" id="logo" style="width: 6%;">
+                <h2 class="text-primary fw-bold">LearnPro</h2>
+            </a>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="text-primary text-decoration-none fw-semibold dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search from courses...">
+                <a href="javascript:void(0)" class="btn btn-secondary px-2 rounded-5">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-white notification-bell border border-2">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge"></span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Daily Challenge Banner -->
+    <div class="text-center bg-primary text-white py-3 mb-4">
+        <h5>Claim Your Daily Challenge ✨</h5>
+    </div>
+    
+    <!-- Course Content Section -->
+    <div class="container">
+        <h2 class="text-primary">UI/UX Design</h2>
+        
+        <div class="row mt-4">
+            <!-- Video & Course Content -->
+            <div class="col-md-8 mb-3">
+                <h5>UI/UX Design Process Gathers User Insights</h5>
+                <div class="video-container my-3">
+                    <iframe width="800" height="495" src="https://www.youtube.com/embed/cKZEgtQUxlU" title="Design 101 Crash Course: Learn UX/UI Design, Figma (6 HOURS!) | Zero To Mastery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur. Penatibus amet dui mauris tellus in dictum orci arcu...</p>
+                <button class="btn btn-primary">Next</button>
+            </div>
+            
+            <!-- Lessons Sidebar -->
+            <div class="col-md-4">
+                <h5 class="text-primary">Chapter 1 Lessons</h5>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6>Title Line I</h6>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                        <span class="badge bg-primary">▶</span>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Title Line II</h6>
+                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Title Line III</h6>
+                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Title Line IV</h6>
+                        <p class="text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Preloader Hide Script -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("preloader").style.display = "none";
+            }, 3000);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro | Courses</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .card-data, .card-data:hover {
+            transition: background-color 0.2s ease-in-out;
+        }
+        .card-data:hover {
+            background-color: #cee6ff82;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-light p-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="text-decoration-none" style="display:inline-flex;">
+                    <img src="assets/images/logo.png" alt="logo" id="logo">
+                    <h2 class="text-primary fw-bold">LearnPro</h2>
+                </a>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="index.html" class="nav-link text-muted"><i class="fas fa-th-large me-2"></i> Dashboard</a></li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active text-white bg-primary rounded"><i class="fas fa-book me-2"></i> Courses</a>
+                </li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted"><i class="fas fa-cog me-2"></i> Settings</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted"><i class="fas fa-sign-out-alt me-2"></i> Log Out</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="content p-4 flex-grow-1">
+            <header class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h4>Hello, <span class="text-primary">User</span> 👋</h4>
+                    <h6 class="text-secondary">Let's learn something new today!</h6>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex">
+                        <input type="text" class="form-control me-2" placeholder="Search from courses...">
+                        <a href="javascript:void(0)" class="btn btn-secondary px-2 rounded-5">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-white notification-bell border border-2">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="badge"></span>
+                    </a>
+                </div>
+            </header>
+            <hr>
+            <!-- Course Categories -->
+            <div class="mb-4">
+                <button class="btn btn-primary text-muted dropdown-toggle" type="button" data-bs-toggle="dropdown" style="background-color: aliceblue;">All</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="#">All</a></li>
+                    <li><a class="dropdown-item" href="#">Design</a></li>
+                    <li><a class="dropdown-item" href="#">Software Development</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">Networking</a></li>
+                    <li><a class="dropdown-item" href="#">Security</a></li>
+                    <li><a class="dropdown-item" href="#">Business</a></li>
+                </ul>
+            </div>
+            
+            <!-- Courses Grid -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-data p-3">
+                        <span class="text-primary">IBM Certificate</span>
+                        <a href="./courses-page/ui_ux.html" class="text-decoration-none" style="color: inherit;">
+                            <img src="assets/images/ui-ux.webp" class="img-fluid rounded my-2">
+                            <h5 class="fw-bold">UI/UX Design</h5>
+                            <p>Our UI/UX process gathers user insights through interviews, surveys, and tests to shape design decisions.</p>
+                            <span class="fw-bold">4.8 ⭐</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-data p-3">
+                        <span class="text-primary">Microsoft Certified</span>
+                        <a href="./courses-page/full_stack.html" class="text-decoration-none" style="color: inherit;">
+                            <img src="assets/images/full-stack.png" class="img-fluid rounded my-2">
+                            <h5 class="fw-bold">Full Stack Development</h5>
+                            <p>Master front-end and back-end development with projects in HTML, CSS, JavaScript, Database (MS SQL Server), C#, .NET Core Framework, APIs, MVC, and Design Patterns.</p>
+                            <span class="fw-bold">4.5 ⭐</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-data p-3">
+                        <span class="text-primary">Adobe Certified</span>
+                        <a href="./courses-page/graphic.html" class="text-decoration-none" style="color: inherit;">
+                            <img src="assets/images/graphic-design.jpg" class="img-fluid rounded my-2">
+                            <h5 class="fw-bold">Graphic Foundation</h5>
+                            <p>Build strong graphic design skills, from typography to color theory, and learn how to apply these concepts.</p>
+                            <span class="fw-bold">4.6 ⭐</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3">
+                        <span class="text-primary">Google Certified</span>
+                        <img src="assets/images/marketing.webp" class="img-fluid rounded my-2">
+                        <h5 class="fw-bold">Digital Marketing</h5>
+                        <p>Learn the essential techniques of digital marketing, including SEO, PPC, and content marketing.</p>
+                        <span class="fw-bold">4.7 ⭐</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3">
+                        <span class="text-primary">JIRA Certified</span>
+                        <img src="assets/images/jira.png" class="img-fluid rounded my-2">
+                        <h5 class="fw-bold">Technical Consultation</h5>
+                        <p>Develop strong technical consultation skills, from problem analysis to solution implementation, and learn how to apply these strategies effectively.</p>
+                        <span class="fw-bold">4.8 ⭐</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3">
+                        <span class="text-primary">Cisco Certified</span>
+                        <img src="assets/images/cyber-security.jpg" class="img-fluid rounded my-2">
+                        <h5 class="fw-bold">Cyber Security</h5>
+                        <p>Build strong cybersecurity skills, from threat analysis to risk mitigation, and learn how to apply these strategies effectively.</p>
+                        <span class="fw-bold">4.9 ⭐</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a href="javascript:void(0)" class="btn btn-outline-primary" style="width: 8%;">
+                    More
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

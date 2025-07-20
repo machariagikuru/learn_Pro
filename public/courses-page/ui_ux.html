@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro | UI/UX Design</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/course-enroll.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+        <div class="d-flex align-items-center">
+            <a href="javascript:history.back()" class="btn btn-light me-3"><i class="fas fa-arrow-left"></i></a>
+            <a href="../index.html" class="text-decoration-none" style="display:inline-flex;">
+                <img src="../assets/images/logo.png" alt="logo" id="logo" style="width: 6%;">
+                <h2 class="text-primary fw-bold">LearnPro</h2>
+            </a>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="text-primary text-decoration-none fw-semibold dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search from courses...">
+                <a href="javascript:void(0)" class="btn btn-secondary px-2 rounded-5">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-white notification-bell border border-2">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative text-center text-white">
+        <img src="../assets/images/ui-ux.webp" class="w-100" alt="UX Research" style="height: 450px; object-fit: cover;">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold">UI/UX Design</h1>
+            <p>Our UI/UX research process gathers user insights through interviews, surveys, and tests to shape design decisions</p>
+            <div class="d-flex align-items-center gap-2">
+                <span class="fw-bold">4.8</span>
+                <span class="text-warning">★★★★★</span>
+            </div>
+            <a href="../courses-enrolled/ui_ux.html" class="btn btn-primary mt-3">Enroll Course</a>
+        </div>
+    </section>
+    
+    <!-- Why Choose This Course -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Course Duration and Rating -->
+                <div class="mb-3">
+                    <p class="fw-bold">⭐ Rating: <span class="text-warning">4.8</span></p>
+                    <p class="fw-bold">⏳ Duration: <span class="text-primary">73.5 hours</span></p>
+                    <p class="fw-bold">📚 Category: <span class="text-success">Design</span></p>
+                </div>
+
+                <!-- Video Section -->
+                <video class="img-fluid rounded" controls poster="../assets/images/ui-ux-thumbnail.jpg">
+                    <source src="../assets/videos/ui-ux-explained-in-2-mins.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>                
+            </div>
+            <div class="col-md-6">
+                <h2>Why Choose This Course?</h2>
+                <p>
+                    Our UI/UX course provides hands-on, practical design techniques taught by industry professionals.
+                    <span class="more-text">
+                        You'll gain expertise in user research, interviews, data analysis, and persona creation, ensuring you can design with real user needs in mind. Beyond the fundamentals, you'll also master wireframing, prototyping, usability testing, and interaction design equipping you with the skills to craft seamless, engaging digital experiences. Perfect for beginners and professionals looking to elevate their design approach.
+                    </span>
+                    <button class="show-more-btn" onclick="toggleText()">Show More...</button>
+                </p>
+                <div class="alert alert-secondary" style="background-color: rgba(233, 233, 233, 0.692);">
+                    <h5 class="fw-bold">Objectives</h5>
+                    <ul class="objectives-list p-4">
+                        <li>Understand UI/UX design principles</li>
+                        <li>Learn user research methodologies</li>
+                        <li>Master wireframing and prototyping</li>
+                        <li>Design user-friendly interfaces</li>
+                        <li>Improve usability and accessibility</li>
+                        <li>Understand color theory and typography</li>
+                        <li>Develop interactive design skills</li>
+                        <li>Gain proficiency in design tools (Figma, Adobe XD)</li>
+                    </ul>
+                </div>
+                <a href="../courses-enrolled/ui_ux.html" class="btn btn-primary">Enroll Course</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews and Ratings -->
+    <section class="container my-5">
+        <h2>Reviews and Rating</h2>
+        <div class="card p-3">
+            <div class="d-flex align-items-center">
+                <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                <input type="text" class="form-control" placeholder="Ask a question or start a post">
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-2">
+                <span class="text-warning">☆☆☆☆☆</span>
+                <a href="javascript:void(0)" class="btn btn-outline-dark mt-3">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- User Reviews -->
+        <div class="mt-4">
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/user-1.jpg" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Raia Ash</span>
+                </div>
+                <span class="text-warning">★★★</span>
+                <p>The course is good for beginners, but if you already have some experience, it might feel too basic. I was hoping for more advanced techniques and design systems.</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Olivia James</span>
+                </div>
+                <span class="text-warning">★★★★</span>
+                <p>I had zero experience in UI/UX, but this course made everything so easy to understand! The real-world examples and hands-on projects were super helpful. Highly recommend!</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/user-2.jpg" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Mia Lucas</span>
+                </div>
+                <span class="text-warning">★★★★★</span>
+                <p>This course covers all the basics of UI/UX in a structured and easy-to-follow way. I just wish there were more case studies, but overall, it's a solid introduction!</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Linda Marcus</span>
+                </div>
+                <span class="text-warning">★★★★★</span>
+                <p>This is one of the best UI/UX courses I’ve taken! The hands-on projects were my favorite part. The explanations are clear, and the resources provided are super valuable!</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Cynthia Jonas</span>
+                </div>
+                <span class="text-warning">★★★★</span>
+                <p>This course does a great job of explaining UI/UX fundamentals with clear examples and practical exercises. However, I wish there was more focus on design systems and real-world projects. Still, a great choice for beginners!</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleText() {
+            const moreText = document.querySelector('.more-text');
+            const btn = document.querySelector('.show-more-btn');
+        
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline"; // Show text
+                btn.textContent = "Show Less"; // Change button text
+            } else {
+                moreText.style.display = "none"; // Hide text
+                btn.textContent = "Show More..."; // Reset button text
+            }
+        }
+    </script>
+</body>
+</html>

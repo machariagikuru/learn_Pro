@@ -1,0 +1,168 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ChaptersTableSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('chapters')->insert([
+            [
+                'id'          => 1,
+                'course_id'   => 1,
+                'title'       => 'Week 1 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 2,
+                'course_id'   => 1,
+                'title'       => 'Week 2 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 3,
+                'course_id'   => 1,
+                'title'       => 'Week 3 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 4,
+                'course_id'   => 2,
+                'title'       => 'Week 1 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 5,
+                'course_id'   => 2,
+                'title'       => 'Week 2 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 6,
+                'course_id'   => 2,
+                'title'       => 'Week 3 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 7,
+                'course_id'   => 2,
+                'title'       => 'Week 4 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 8,
+                'course_id'   => 2,
+                'title'       => 'Week 5 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 9,
+                'course_id'   => 2,
+                'title'       => 'Week 6 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 10,
+                'course_id'   => 2,
+                'title'       => 'Week 7 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 11,
+                'course_id'   => 2,
+                'title'       => 'Week 8 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 12,
+                'course_id'   => 2,
+                'title'       => 'Week 9 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 13,
+                'course_id'   => 2,
+                'title'       => 'Week 10 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 14,
+                'course_id'   => 2,
+                'title'       => 'Week 11 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 15,
+                'course_id'   => 2,
+                'title'       => 'Week 12 Lessons',
+                'description' => null,
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 16,
+                'course_id'   => 3,
+                'title'       => 'Introduction',
+                'description' => 'Intro To IBM Certified Program in Advanced Artificial Intelligence',
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+            [
+                'id'          => 17,
+                'course_id'   => 4,
+                'title'       => 'Introduction',
+                'description' => 'Intro To IBM Certified Program in Advanced Artificial Intelligence',
+                'order'       => null,
+                'created_at'  => null,
+                'updated_at'  => null,
+            ],
+        ]);
+    }
+}
