@@ -103,9 +103,9 @@ Here are some screenshots from different sections of the application.
 
 ### 🏠 Landing Page
 A welcoming homepage where users can explore the platform and its features.
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Landing_Page\1.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Landing_Page\2.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Landing_Page\3.png" width="600"/>
+<img src="public\Photos\Landing_Page\1.png" width="600"/>
+<img src="public\Photos\Landing_Page\2.png" width="600"/>
+<img src="public\Photos\Landing_Page\3.png" width="600"/>
 
 ### 🔐 Login & Registration
 Secure login and registration forms for new and returning users.
