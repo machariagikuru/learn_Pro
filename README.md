@@ -13,7 +13,7 @@ A modern, full-featured platform for managing online courses, users, instructors
 - 👤 **User Management**: Registration, login, roles (Admin, Instructor, User), profile management
 - 🛡️ **Admin Panel**: User & course approval, role management, analytics dashboard, notifications
 - 🎓 **Instructor Panel**: Course creation, chapter & lesson management, task/quest assignment, student progress tracking
-- 📚 **Course & Lesson Management**: Upload courses with images/videos, organize by categories, approval workflow
+- 📚 **Course & Lesson Management**: Upload courses with images/videos, flow
 - 📝 **Tasks & Insight Quests**: Assignments, file submissions, grading, feedback, multi-file upload
 - 📊 **Analytics & Statistics**: Enrollment stats, student progress, course performance charts
 - 🔔 **Notifications**: Email & in-app notifications for submissions, grading, approvals
@@ -109,41 +109,41 @@ A welcoming homepage where users can explore the platform and its features.
 
 ### 🔐 Login & Registration
 Secure login and registration forms for new and returning users.
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Login_Registration\1.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Login_Registration\2.png" width="600"/>
+<img src="public\Photos\Login_Registration\1.png" width="600"/>
+<img src="public\Photos\Login_Registration\2.png" width="600"/>
 
 ### 🎓 Student Dashboard
 Students can view their enrolled courses, progress, and access learning materials.
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\1.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\2.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\3.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\4.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\5.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\6.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\7.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\8.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\9.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\10.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\11.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Student\12.png" width="600"/>
+<img src="public\Photos\Student\1.png" width="600"/>
+<img src="public\Photos\Student\2.png" width="600"/>
+<img src="public\Photos\Student\3.png" width="600"/>
+<img src="public\Photos\Student\4.png" width="600"/>
+<img src="public\Photos\Student\5.png" width="600"/>
+<img src="public\Photos\Student\6.png" width="600"/>
+<img src="public\Photos\Student\7.png" width="600"/>
+<img src="public\Photos\Student\8.png" width="600"/>
+<img src="public\Photos\Student\9.png" width="600"/>
+<img src="public\Photos\Student\10.png" width="600"/>
+<img src="public\Photos\Student\11.png" width="600"/>
+<img src="public\Photos\Student\12.png" width="600"/>
 
 ### 👨‍🏫 Instructor Panel
 Instructors manage their courses, upload content, and track student performance.
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\1.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\2.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\3.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\4.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\5.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\6.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Instructor\7.png" width="600"/>
+<img src="public\Photos\Instructor\1.png" width="600"/>
+<img src="public\Photos\Instructor\2.png" width="600"/>
+<img src="public\Photos\Instructor\3.png" width="600"/>
+<img src="public\Photos\Instructor\4.png" width="600"/>
+<img src="public\Photos\Instructor\5.png" width="600"/>
+<img src="public\Photos\Instructor\6.png" width="600"/>
+<img src="public\Photos\Instructor\7.png" width="600"/>
 <!-- Instructor panel screenshot coming soon -->
 
 ### 🛡️ Admin Panel
 Admins oversee the platform, approve courses, and manage users.
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Admin\1.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Admin\2.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Admin\3.png" width="600"/>
-<img src="D:\Projects\Github_Upload\learn_pro\public\Photos\Admin\4.png" width="600"/>
+<img src="public\Photos\Admin\1.png" width="600"/>
+<img src="public\Photos\Admin\2.png" width="600"/>
+<img src="public\Photos\Admin\3.png" width="600"/>
+<img src="public\Photos\Admin\4.png" width="600"/>
 <!-- Admin panel screenshot coming soon -->
 
 **Live demo: Coming soon!**
