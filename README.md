@@ -162,7 +162,7 @@ Admins oversee the platform, approve courses, and manage users.
 
 ## 📫 Contact
 
-- **GitHub**: [your-github-username](https://github.com/Hassanoli)
+- **GitHub**: [Hassanoli](https://github.com/Hassanoli)
 - **Email**: Email: hassanmohamedali0113@gmail.com
 
 ---
