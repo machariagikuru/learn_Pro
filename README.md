@@ -162,8 +162,8 @@ Admins oversee the platform, approve courses, and manage users.
 
 ## 📫 Contact
 
-- **GitHub**: [your-github-username](https://github.com/your-github-username)
-- **Email**: your.email@example.com
+- **GitHub**: [your-github-username](https://github.com/Hassanoli)
+- **Email**: Email: hassanmohamedali0113@gmail.com
 
 ---
 
