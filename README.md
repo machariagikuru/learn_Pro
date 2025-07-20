@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/Photos/long_logo.png" alt="Learn Pro Logo" width="180"/>
+  <img src="public/Photos/long _logo.jpg" alt="Learn Pro Logo" width="180"/>
 </p>
 
 # 📚 Learn Pro
