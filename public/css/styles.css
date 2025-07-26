@@ -1,0 +1,417 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: url('path/to/your/image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Default background - Landing page overrides this */
+    /* background-color: #F8F9FA; */
+    font-size: 14px; /* Base font size */
+}
+
+/* --- Define Color Variables --- */
+:root {
+  --lp-primary-light: #299dff; /* Lighter blue from target image (approx) */
+  --lp-gray-light: #adb5bd; /* Lighter gray for text */
+  --lp-gray-lighter: #ced4da; /* Even lighter for lines */
+}
+
+/* --- General Card Styles (Used by Landing Page Features/Testimonials) --- */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    background-color: #fff;
+}
+
+/* --- Styles for Landing Page (landing.html) --- */
+.landing-page-body {
+    background-color: #fff; /* Landing page white bg */
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh; /* Increased from 70vh */
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/Photos/Frame.png'); /* Updated path */
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.hero-title {
+    line-height: 1.2;
+    font-size: 3.5rem;
+}
+.hero-subtitle {
+    opacity: 0.9;
+}
+.hero-buttons .btn-outline-light {
+    border-width: 2px;
+}
+.watch-video-btn i {
+    vertical-align: middle;
+}
+
+/* Partner Logos */
+.partner-logos {
+    background-color: #fff; /* Or match the section background */
+    padding-top: 2rem; /* Add some padding */
+    padding-bottom: 2rem;
+}
+.partner-logo {
+    opacity: 0.7; /* Slightly faded like target */
+    max-height: 35px; /* Adjust this value as needed */
+    width: auto; /* Let width scale proportionally */
+    vertical-align: middle;
+}
+
+/* General Section Title on Landing Page */
+.section-title {
+    color: #343a40;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+    overflow: hidden; /* Prevent absolutely positioned elements from causing scroll */
+    padding-top: 6rem; /* More padding top */
+    padding-bottom: 6rem; /* More padding bottom */
+}
+.who-we-are-card {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 0; /* Align to the left */
+    transform: translateY(-50%); /* Fine-tune vertical centering */
+    width: 55%; /* Adjust width as needed */
+    z-index: 2; /* Ensure card is above image */
+    border-radius: 15px !important; /* Explicit border-radius */
+}
+.who-we-are-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0; /* Align to the right */
+    width: 60%; /* Adjust width */
+    height: 100%;
+    z-index: 1; /* Ensure image is behind card */
+    border-radius: 15px;
+    overflow: hidden; /* Keep image contained */
+}
+.who-we-are-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, may crop */
+}
+.decorative-quote {
+    position: absolute;
+    top: -15px; /* Position above the card content */
+    left: 30px; /* Indent from the left */
+    width: 10px; /* Width of each bar */
+    height: 40px; /* Height of the bars */
+    background-color: var(--lp-primary-light);
+    border-radius: 3px;
+    transform: rotate(-15deg); /* Slight rotation */
+}
+.decorative-quote::after { /* Second bar */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px; /* Space between bars */
+    width: 10px;
+    height: 40px;
+    background-color: var(--lp-primary-light);
+    border-radius: 3px;
+}
+.floating-notification {
+    position: absolute;
+    /* Position relative to image wrapper */
+    bottom: 25px;
+    right: -40px; /* Overlap to the right */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 280px;
+    z-index: 3; /* Above image and potentially card edge */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Added from another rule */
+}
+/* Responsive Adjustments for Who We Are */
+@media (max-width: 991.98px) {
+    .who-we-are-card {
+      position: relative; /* Stack elements */
+      width: 80%; /* Adjust width */
+      left: auto;
+      top: auto;
+      transform: none;
+      margin: 0 auto 2rem auto; /* Center card and add margin below */
+      z-index: 2;
+    }
+    .who-we-are-image-wrapper {
+      position: relative; /* Stack elements */
+      width: 90%; /* Adjust width */
+      right: auto;
+      height: 400px; /* Give it a fixed height */
+      margin: 0 auto; /* Center image */
+      z-index: 1;
+    }
+     .floating-notification {
+       bottom: 15px;
+       right: 15px; /* Bring inside image boundaries */
+       max-width: 240px;
+       /* Make static for smaller screens based on general media query */
+       position: static;
+       margin-top: 1rem;
+       /* max-width: 100%; */ /* This might conflict, choose one */
+     }
+     .decorative-quote {
+       left: 15px; /* Adjust quote position */
+       top: -10px;
+       height: 30px;
+     }
+      .decorative-quote::after {
+        left: 15px;
+        height: 30px;
+      }
+}
+@media (max-width: 767.98px) {
+     .who-we-are-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+     }
+     .who-we-are-card {
+       width: 95%; /* More width */
+       padding: 1.5rem !important;
+     }
+     .who-we-are-image-wrapper {
+       width: 100%;
+       height: 350px;
+     }
+     .floating-notification {
+        bottom: 10px;
+        right: 10px;
+        padding: 0.6rem 0.8rem;
+     }
+     .floating-notification .small { font-size: 0.75rem;}
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #fff; /* Ensure white background */
+}
+.why-choose-us .feature-card {
+    border: 1px solid #e7f1ff !important; /* Use light blue border */
+    box-shadow: none !important; /* Remove shadow */
+    transition: none !important; /* Remove hover transition */
+    border-radius: 12px; /* Match general card radius */
+}
+.why-choose-us .feature-card:hover {
+    transform: none !important; /* Remove hover transform */
+    box-shadow: none !important; /* Remove hover shadow */
+}
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; /* Make it a circle */
+    background-color: #e7f1ff; /* Light blue background */
+    display: inline-flex; /* Use flex to center icon */
+    align-items: center;
+    justify-content: center;
+    color: var(--lp-primary-light); /* Icon color */
+    font-size: 1.8rem; /* Adjust icon size */
+}
+.why-choose-us .card-title {
+    color: #343a40; /* Ensure dark title */
+}
+.why-choose-us .btn-outline-primary {
+     border-color: var(--lp-primary-light);
+     color: var(--lp-primary-light);
+     font-weight: 500;
+     padding: 0.4rem 1rem;
+     font-size: 0.8rem;
+     border-radius: 6px;
+}
+.why-choose-us .btn-outline-primary:hover {
+     background-color: var(--lp-primary-light);
+     color: #fff;
+}
+
+/* Feature Detail Sections */
+.feature-detail {
+    overflow-x: hidden;
+}
+.feature-detail .section-title {
+     line-height: 1.3;
+}
+.feature-detail img {
+    /* Inherits shadow/rounding from HTML */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff; /* Ensure white background */
+}
+.testimonials .text-primary { /* Style for the 'TESTIMONIAL' label */
+    color: var(--lp-primary-light) !important;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.testimonial-card {
+    border: 1px solid var(--lp-primary-light) !important; /* Blue border */
+    border-radius: 15px !important; /* Match target radius */
+    box-shadow: none !important; /* Remove shadow */
+    background-color: #fff !important; /* Ensure white background */
+    /* Make card a flex column to push avatar down */
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-card .stars i {
+    margin-right: 2px;
+}
+.testimonial-card .stars i.text-primary { /* Ensure stars use primary color */
+     color: var(--lp-primary-light) !important;
+}
+.testimonial-card .stars i.text-muted { /* Ensure empty stars are gray */
+     color: var(--lp-gray-lighter) !important;
+}
+.testimonial-card .card-text {
+    line-height: 1.6; /* Adjust line height for readability */
+    flex-grow: 1; /* Allow text to take up space */
+}
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Final CTA Section */
+.final-cta {
+    background-color: #f8f9fa;
+}
+
+/* Dashboard Preview */
+.dashboard-preview {
+    padding-bottom: 0 !important; /* Ensure no bottom padding */
+    /* background-color: #f8f9fa; Keep bg color if desired */
+}
+.dashboard-preview img {
+    max-width: 100%; /* Allow image to potentially be wider */
+    width: 100%; /* Make image take full width of container */
+    border: 1px solid #dee2e6;
+    border-bottom: none; /* Remove bottom border */
+    border-bottom-left-radius: 0 !important; /* Remove bottom rounding */
+    border-bottom-right-radius: 0 !important;
+    /* Inherits shadow/rounding from HTML */
+}
+
+/* --- General Overrides & Utilities (Used on Landing Page) --- */
+
+/* Ensure links styled as buttons retain text color */
+a.btn.text-decoration-none {
+    color: white;
+}
+a.btn.text-decoration-none:hover {
+    color: white;
+}
+a.btn.btn-outline-secondary.text-decoration-none {
+    color: #6c757d;
+}
+a.btn.btn-outline-secondary.text-decoration-none:hover {
+    color: #6c757d;
+}
+a.btn.btn-outline-light.text-decoration-none { /* For hero section outline button */
+    color: #f8f9fa; /* Or Bootstrap $light */
+}
+a.btn.btn-outline-light.text-decoration-none:hover {
+     color: #343a40; /* Or Bootstrap $dark */
+}
+
+
+/* General button primary override */
+.btn-primary {
+    background-color: var(--lp-primary-light) !important;
+    border-color: var(--lp-primary-light) !important;
+    color: #fff !important;
+}
+.btn-primary:hover {
+     opacity: 0.9;
+     color: #fff !important;
+}
+
+/* --- Responsive Adjustments (Relevant to Landing Page) --- */
+@media (max-width: 991.98px) {
+    /* Landing Page Nav collapse adjustment */
+     .landing-page-body {
+        padding-top: 56px; /* Adjust for collapsed nav height if you have a fixed-top navbar */
+        /* If no fixed-top navbar on landing, remove this rule */
+     }
+     /* Who we are handled above */
+}
+
+@media (max-width: 767.98px) {
+     /* Who we are handled above */
+}
+
+@media (max-width: 575.98px) {
+    /* Landing Hero */
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .hero-buttons .btn { width: 100%; margin-bottom: 0.5rem;}
+    .hero-buttons .btn:last-child { margin-bottom: 0;}
+}
+
+#calendar table {
+    width: 100% !important;
+    font-size: 0.85em;
+}
+
+#calendar {
+    transform: scale(0.85);
+    transform-origin: top left;
+}

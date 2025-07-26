@@ -1,0 +1,220 @@
+/* --- Variables --- */
+:root {
+  --lp-primary-learnpro: #299dff; /* Specific blue from landing/registration */
+  --lp-text-dark: #212529;
+  --lp-text-secondary: #6c757d;
+  --lp-border-color: #dee2e6;
+  --lp-input-bg: #f8f9fa;
+  --lp-body-bg: #f7f9fc; /* Very light gray/blue background */
+}
+
+/* --- Body Styling --- */
+body.signin-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--lp-body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 1rem 2rem 1rem; /* Top padding for fixed logo, L/R/B padding */
+    margin: 0;
+    position: relative; /* Needed for absolute positioning of decorative images */
+    overflow-x: hidden; /* Prevent horizontal scroll from decorations */
+}
+
+/* --- Logo --- */
+.logo-container {
+    position: fixed; /* Fixed at the top */
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex; /* Use inline-flex */
+    align-items: center;
+    z-index: 10;
+}
+.logo-icon {
+    color: var(--lp-primary-learnpro);
+    font-size: 1.6rem; /* Adjust size */
+    margin-right: 0.4rem;
+}
+.logo-text {
+    font-size: 1.7rem; /* Adjust size */
+    font-weight: 600;
+    color: var(--lp-primary-learnpro);
+}
+
+/* --- Form Container --- */
+.signin-form-container {
+    background-color: #fff;
+    padding: 2.5rem; /* Adjust padding */
+    border-radius: 16px;
+    max-width: 480px; /* Narrower width */
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    z-index: 1; /* Ensure form is above decorative images */
+    position: relative;
+}
+
+/* --- Headings --- */
+.form-title {
+    font-size: 2rem; /* Adjust size */
+    font-weight: 600;
+    color: var(--lp-text-dark);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.form-subheading {
+    font-size: 0.9rem;
+    color: var(--lp-text-secondary);
+    text-align: center;
+    margin-bottom: 2rem; /* Space below subheading */
+}
+
+/* --- Input Fields --- */
+.signin-input {
+    border-radius: 8px !important;
+    border: 1px solid var(--lp-border-color);
+    background-color: var(--lp-input-bg);
+    padding-top: 0.65rem; /* Adjust padding */
+    padding-bottom: 0.65rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.signin-input:focus {
+    background-color: #fff;
+    border-color: var(--lp-primary-learnpro);
+    box-shadow: 0 0 0 0.2rem rgba(41, 157, 255, 0.25);
+    z-index: 2;
+}
+.signin-input::placeholder {
+    color: #adb5bd;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+
+/* --- Separator --- */
+.separator {
+    text-align: center;
+    color: var(--lp-text-secondary);
+    font-size: 0.85rem;
+    position: relative;
+    overflow: hidden; /* Hide pseudo-element overflow */
+}
+.separator span {
+    display: inline-block;
+    position: relative;
+    padding: 0 0.75em;
+    background-color: #fff; /* Match form background */
+    z-index: 1;
+}
+/* Optional: Add lines to the separator */
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: var(--lp-border-color);
+}
+.separator::before {
+    left: 0;
+    margin-left: -10px; /* Adjust overlap */
+}
+.separator::after {
+    right: 0;
+    margin-right: -10px; /* Adjust overlap */
+}
+
+
+/* --- Buttons --- */
+.btn-signin {
+    background-color: var(--lp-primary-learnpro) !important;
+    border-color: var(--lp-primary-learnpro) !important;
+    font-weight: 500;
+    padding: 0.7rem 1rem; /* Adjust padding for lg */
+    border-radius: 8px !important;
+}
+.btn-signin:hover {
+    opacity: 0.9;
+}
+
+.btn-google {
+    background-color: #fff !important;
+    border: 1px solid var(--lp-border-color) !important;
+    color: var(--lp-text-dark) !important;
+    font-weight: 500;
+    padding: 0.7rem 1rem; /* Adjust padding for lg */
+    border-radius: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google:hover {
+    background-color: #f8f9fa !important; /* Slight gray on hover */
+}
+.btn-google img {
+    height: 20px;
+    width: 20px;
+}
+
+/* --- Create Account Link --- */
+.create-account-link {
+    color: var(--lp-text-secondary);
+    margin-top: 1.5rem; /* Space above link */
+}
+.create-account-link a {
+    color: var(--lp-primary-learnpro);
+    font-weight: 500;
+}
+
+/* --- Decorative Images (Same as registration) --- */
+.decorative-image {
+    position: absolute;
+    max-width: 300px;
+    width: 25%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+.decorative-image.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+.decorative-image.top-right {
+    top: 0;
+    right: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991.98px) { /* Hide decorations on medium screens and down */
+    .decorative-image {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+     .signin-form-container {
+        padding: 1.5rem;
+        margin-top: 60px; /* Add more space below fixed header on small screens */
+    }
+     .form-title {
+        font-size: 1.6rem;
+    }
+    .form-subheading {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo-container {
+        top: 1rem; /* Move logo up slightly */
+    }
+    .logo-icon { font-size: 1.4rem; }
+    .logo-text { font-size: 1.5rem; }
+
+     .btn-lg { /* Make buttons slightly smaller */
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

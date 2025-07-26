@@ -1,0 +1,236 @@
+/* Import Google Font */
+/* (Assuming Poppins is already linked in HTML) */
+
+:root {
+  --lp-primary: #0d6efd; /* Standard Bootstrap blue, adjust if needed */
+  --lp-primary-learnpro: #299dff; /* Specific blue from landing page */
+  --lp-text-dark: #212529;
+  --lp-text-secondary: #6c757d;
+  --lp-border-color: #dee2e6;
+  --lp-input-bg: #f8f9fa; /* Light background for inputs */
+  --lp-body-bg: #f7f9fc; /* Very light gray/blue background */
+}
+
+body.signup-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--lp-body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 750px; /* Adjust width as needed */
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--lp-primary-learnpro); /* Use LearnPro blue */
+}
+.logo i {
+    margin-right: 0.25rem;
+    vertical-align: baseline;
+}
+
+/* Title */
+.form-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--lp-text-dark);
+}
+
+/* Form Labels */
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--lp-text-secondary);
+    margin-bottom: 0.3rem;
+}
+.form-label .text-muted {
+    font-weight: 400;
+}
+
+/* Form Inputs */
+.signup-input {
+    border-radius: 8px !important;
+    border: 1px solid var(--lp-border-color);
+    background-color: var(--lp-input-bg);
+    padding: 0.6rem 1rem; /* Adjust padding for lg size */
+    font-size: 0.95rem; /* Adjust font size for lg */
+    line-height: 1.5;
+}
+.signup-input:focus {
+    background-color: #fff;
+    border-color: var(--lp-primary-learnpro);
+    box-shadow: 0 0 0 0.2rem rgba(41, 157, 255, 0.25);
+    z-index: 2; /* Ensure focus ring is visible */
+}
+.signup-input::placeholder {
+    color: #adb5bd;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+
+/* Date of Birth Input with Icon */
+.dob-input {
+    padding-right: 2.5rem; /* Make space for the icon */
+}
+.dob-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--lp-text-secondary);
+    pointer-events: none; /* Don't let icon interfere with input */
+}
+
+/* Checkboxes */
+.signup-checkbox {
+    border-color: var(--lp-border-color);
+    border-radius: 4px !important; /* Slightly rounded */
+    margin-top: 0.2em; /* Align better with label */
+}
+.signup-checkbox:checked {
+    background-color: var(--lp-primary-learnpro);
+    border-color: var(--lp-primary-learnpro);
+}
+.signup-checkbox:focus {
+     box-shadow: 0 0 0 0.2rem rgba(41, 157, 255, 0.25);
+}
+.form-check-label {
+    color: var(--lp-text-secondary);
+}
+.form-check-label a {
+    color: var(--lp-primary-learnpro);
+    font-weight: 500;
+}
+
+/* Links */
+.forgot-link {
+    color: var(--lp-primary-learnpro);
+}
+.login-link-text {
+    color: var(--lp-text-secondary);
+}
+.login-link-text a {
+    color: var(--lp-primary-learnpro);
+}
+
+/* Buttons */
+.btn-create-account {
+    background-color: var(--lp-primary-learnpro) !important;
+    border-color: var(--lp-primary-learnpro) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem; /* Adjust padding for lg */
+    border-radius: 8px !important;
+}
+.btn-create-account:hover {
+    opacity: 0.9;
+}
+
+.btn-google {
+    background-color: #fff !important;
+    border: 1px solid var(--lp-border-color) !important;
+    color: var(--lp-text-dark) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem; /* Adjust padding for lg */
+    border-radius: 8px !important;
+    display: flex; /* Use flex to center content */
+    align-items: center;
+    justify-content: center;
+}
+.btn-google:hover {
+    background-color: #f8f9fa !important; /* Slight gray on hover */
+}
+.btn-google img {
+    height: 20px; /* Ensure logo size is consistent */
+    width: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .signup-container {
+        padding: 2rem;
+        margin: 1rem; /* Add margin on smaller screens */
+    }
+    .form-title {
+        font-size: 1.8rem;
+        margin-bottom: 3rem !important;
+    }
+    /* Stack columns on smaller screens if not already handled by Bootstrap */
+    .row > div[class^="col-"] {
+        margin-bottom: 1rem; /* Add space between stacked inputs */
+    }
+    .row > div[class^="col-"]:last-child {
+        margin-bottom: 0;
+    }
+    /* Adjust row margin if stacking */
+    .row.mb-3 {
+        margin-bottom: 0 !important; /* Remove bottom margin from row if children have it */
+    }
+}
+@media (max-width: 575.98px) {
+     .signup-container {
+        padding: 1.5rem;
+    }
+     .form-title {
+        font-size: 1.6rem;
+    }
+    .btn-lg { /* Make buttons slightly smaller */
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ... (Keep all previous CSS rules) ... */
+
+/* --- Decorative Images --- */
+.decorative-image {
+  position: absolute; /* Position relative to the body */
+  max-width: 300px; /* Adjust size as needed */
+  width: 25%;      /* Example relative width */
+  height: auto;
+  z-index: 0;      /* Keep behind the signup container if needed */
+  pointer-events: none; /* Make sure they don't interfere with clicks */
+}
+
+.decorative-image.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.decorative-image.top-right {
+  top: 0;
+  right: 0;
+}
+
+/* Adjust signup container positioning if needed */
+.signup-container {
+  /* ... keep existing styles ... */
+  position: relative; /* Ensure it creates a stacking context */
+  z-index: 1;         /* Ensure it's above the decorative images */
+}
+
+
+/* --- Responsive Adjustments for Decorative Images --- */
+@media (max-width: 991.98px) { /* Hide on medium screens and down */
+  .decorative-image {
+      display: none;
+  }
+}
+
+/* Optional: Adjust body padding if images overlap content area initially */
+/* body.signup-body {
+  padding: 2rem 5%; /* Example: Add horizontal padding */
+/* } */
+
+/* ... (Keep existing media queries, potentially adjust them) ... */

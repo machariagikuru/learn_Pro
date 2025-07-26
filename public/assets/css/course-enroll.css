@@ -1,0 +1,47 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.objectives-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.objectives-list li {
+    width: 45%; /* Two-column layout */
+    list-style: none; /* Remove default bullets */
+    position: relative;
+    padding-left: 25px; /* Space for the icon */
+}
+
+.objectives-list li::before {
+    content: "\f00c"; /* FontAwesome check icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Green checkmark */
+}
+
+@media (max-width: 768px) {
+    .objectives-list li {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.more-text {
+    display: none; /* Hide extra text initially */
+}
+
+.show-more-btn {
+    color: #007bff; /* Bootstrap primary color */
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    padding: 0;
+}

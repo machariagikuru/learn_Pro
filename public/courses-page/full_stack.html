@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro | Full Stack Development</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/course-enroll.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+        <div class="d-flex align-items-center">
+            <a href="javascript:history.back()" class="btn btn-light me-3"><i class="fas fa-arrow-left"></i></a>
+            <a href="../index.html" class="text-decoration-none" style="display:inline-flex;">
+                <img src="../assets/images/logo.png" alt="logo" id="logo" style="width: 6%;">
+                <h2 class="text-primary fw-bold">LearnPro</h2>
+            </a>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="text-primary text-decoration-none fw-semibold dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search from courses...">
+                <a href="javascript:void(0)" class="btn btn-secondary px-2 rounded-5">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-white notification-bell border border-2">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative text-center text-white">
+        <img src="../assets/images/full-stack.png" class="w-100" alt="UX Research" style="height: 450px; object-fit: cover;">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold">Full Stack Development</h1>
+            <p>Master full-stack development by building dynamic web applications from front-end to back-end, using modern frameworks, databases, and APIs</p>
+            <div class="d-flex align-items-center gap-2">
+                <span class="fw-bold">4.5</span>
+                <span class="text-warning">★★★★★</span>
+            </div>
+            <a href="../courses-enrolled/full_stack.html" class="btn btn-primary mt-3">Enroll Course</a>
+        </div>
+    </section>
+    
+    <!-- Why Choose This Course -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!-- Course Duration and Rating -->
+                <div class="mb-3">
+                    <p class="fw-bold">⭐ Rating: <span class="text-warning">4.5</span></p>
+                    <p class="fw-bold">⏳ Duration: <span class="text-primary">96 hours</span></p>
+                    <p class="fw-bold">📚 Category: <span class="text-success">Software Development</span></p>
+                </div>
+
+                <!-- Video Section -->
+                <div class="img-fluid rounded" controls poster="../assets/images/full-stack-thumbnail.webp">
+                    <iframe width="640" height="400" src="https://www.youtube.com/embed/8KaJRw-rfn8" title="What Is Full Stack? | Full Stack Developer | What Is Full Stack Web Development |Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>             
+                </div>  
+            </div>
+            <div class="col-md-6">
+                <h2>Why Choose This Course?</h2>
+                <p>
+                    Our Full-Stack Development course offers hands-on experience with front-end and back-end technologies, guided by industry professionals.
+                    <span class="more-text">
+                        You'll gain expertise in building dynamic web applications, working with databases, APIs, and modern frameworks. 
+                        From structuring scalable back-end systems to crafting responsive user interfaces, this course ensures you're job-ready with in-demand coding skills. 
+                        Whether you're a beginner or an experienced developer looking to expand your skill set, this course is designed to help you succeed in full-stack development.
+                    </span>
+                    <button class="show-more-btn" onclick="toggleText()">Show More...</button>
+                </p>
+                <div class="alert alert-secondary" style="background-color: rgba(233, 233, 233, 0.692);">
+                    <h5 class="fw-bold">Objectives</h5>
+                    <ul class="objectives-list p-4">
+                        <li>Understand front-end and back-end development</li>
+                        <li>Learn modern frameworks (React, Angular, or Vue)</li>
+                        <li>Work with databases (SQL & NoSQL)</li>
+                        <li>Develop APIs and server-side applications</li>
+                        <li>Implement authentication and security best practices</li>
+                        <li>Optimize web performance and scalability</li>
+                        <li>Deploy applications to cloud platforms</li>
+                        <li>Gain proficiency in Git, CI/CD, and DevOps tools</li>
+                    </ul>
+                </div>
+                <a href="../courses-enrolled/full_stack.html" class="btn btn-primary">Enroll Course</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews and Ratings -->
+    <section class="container my-5">
+        <h2>Reviews and Rating</h2>
+        <div class="card p-3">
+            <div class="d-flex align-items-center">
+                <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                <input type="text" class="form-control" placeholder="Ask a question or start a post">
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-2">
+                <span class="text-warning">☆☆☆☆☆</span>
+                <a href="javascript:void(0)" class="btn btn-outline-dark mt-3">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- User Reviews -->
+        <div class="mt-4">
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Jake Thompson</span>
+                </div>
+                <span class="text-warning">★★★★</span>
+                <p>This course gave me a solid foundation in full-stack development! I appreciated the hands-on projects, but I would have liked more advanced topics on backend scalability.</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Sophia Carter</span>
+                </div>
+                <span class="text-warning">★★★★★</span>
+                <p>Amazing course! The step-by-step approach to learning front-end and back-end development made it really easy to follow. Highly recommend for beginners!</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Ryan Patel</span>
+                </div>
+                <span class="text-warning">★★★</span>
+                <p>The content is good, but I felt some parts were a bit rushed. Would have loved more detailed explanations on database management and authentication.</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">Emma Rodriguez</span>
+                </div>
+                <span class="text-warning">★★★★★</span>
+                <p>One of the best full-stack courses out there! I went from zero experience to building my own web apps. The projects were super practical and well-explained.</p>
+            </div>
+            <div class="card p-3 mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/images/no-user.png" class="rounded-circle me-2" width="35" alt="User">
+                    <span class="fw-bold">David Lee</span>
+                </div>
+                <span class="text-warning">★★★★</span>
+                <p>Great course for learning both front-end and back-end! The real-world projects were super helpful. I just wish there was more content on DevOps and deployment.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleText() {
+            const moreText = document.querySelector('.more-text');
+            const btn = document.querySelector('.show-more-btn');
+        
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline"; // Show text
+                btn.textContent = "Show Less"; // Change button text
+            } else {
+                moreText.style.display = "none"; // Hide text
+                btn.textContent = "Show More..."; // Reset button text
+            }
+        }
+    </script>
+</body>
+</html>

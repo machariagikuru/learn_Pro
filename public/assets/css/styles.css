@@ -1,0 +1,398 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#search-input:hover {
+    background-color: rgba(135, 135, 135, 0.977) !important;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 18%;
+    height: 20%;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle-progress {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.circle-progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.circle-progress h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.course-item {
+    width: 30%;
+    text-align: center;
+}
+
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Enhanced Calendar Styles */
+.calendar-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    padding: 24px;
+    min-width: 320px;
+    max-width: 370px;
+    min-height: unset !important;
+    max-height: unset !important;
+    height: auto !important;
+    margin: 0 8px 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.calendar-card h5 {
+    display: none;
+}
+#calendar {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 16px;
+    padding: 0 !important;
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.calendar-nav button {
+    background: #f1f5fa;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #b0b3c6;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.calendar-nav button:hover {
+    background: #e3eafd;
+    color: #1976f6;
+}
+.calendar-nav button:active {
+    transform: translateY(0);
+}
+.calendar-nav h3, .calendar-nav span, .calendar-nav strong {
+    flex: 1;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+#calendar th {
+    color: #b0b3c6;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    background: none;
+    border: none;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#calendar th:first-child { color: #e53935; }
+#calendar th:last-child { color: #b0b3c6; }
+#calendar td {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #222;
+    background: none;
+    position: relative;
+    vertical-align: middle;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    font-size: 1.05rem;
+    text-align: center;
+}
+#calendar td.today {
+    background: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+}
+#calendar td.selected {
+    background: #e3eafd;
+    color: #1976f6;
+    font-weight: bold;
+}
+#calendar td:hover:not(.other-month):not(.today):not(.selected) {
+    background: #e3eafd;
+    color: #1976f6;
+}
+#calendar td.other-month {
+    color: #d1d5db;
+    cursor: default;
+    background: none;
+}
+#calendar tr td:first-child { color: #e53935; }
+#calendar tr td:last-child { color: #b0b3c6; }
+
+/* Calendar Navigation */
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-nav button {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 6px;
+    color: #2c3e50;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+}
+
+.calendar-nav button:hover {
+    background-color: #e9ecef;
+    transform: translateY(-1px);
+}
+
+.calendar-nav button:active {
+    transform: translateY(0);
+}
+
+#top-course-item {
+    width: 20%;
+}
+
+/* Mentor Bot Chat */
+/* Chat Container */
+.chat-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    max-width: 90%;
+}
+
+/* General Chat Message */
+.chat-message {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: normal; /* Ensures proper text wrapping */
+    max-width: 80%; /* Prevents messages from stretching too much */
+    line-height: 1.5; /* Ensures proper spacing between lines */
+}
+
+/* User Messages (Right-Aligned) */
+.chat-message.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    border-bottom-right-radius: 5px;
+    word-break: normal;
+}
+
+/* Bot Messages (Left-Aligned) */
+.chat-message.bot {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+    border-bottom-left-radius: 5px;
+    word-break: normal;
+}
+
+/* Timestamp Styling */
+.message-timestamp {
+    font-size: 12px;
+    color: gray;
+    margin-top: 3px;
+    align-self: flex-start;
+}
+
+/* Prevent Messages from Stacking Unnaturally */
+#chatBox-uiux, #chatBox-development, #chatBox-marketing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Fix for Extra Spaces */
+.chat-message-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chat-message.user {
+    justify-content: flex-start;
+}
+
+/* Enrolled courses styles */
+    /* Ensure the coloration of the default collapsed panels */
+        /* Keep Bootstrap default light blue when expanded */
+        .accordion-button:not(.collapsed) {
+            background-color: #cfe2fdc9 !important; /* Light blue when expanded */
+            color: black !important;
+        }
+
+        /* Set background to white when collapsed */
+        .accordion-button.collapsed {
+            background-color: white !important;
+            color: black !important;
+        }  
+
+.stats-card, .mentor-bot-card, .calendar-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    padding: 24px;
+    min-height: 370px;
+    height: 100%;
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+@media (min-width: 768px) {
+    .stats-card, .mentor-bot-card, .calendar-card {
+        min-height: 350px;
+        max-height: 400px;
+    }
+}
+.mentor-bot-card .card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.mentor-bot-card .mentor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7fafd;
+    border-radius: 12px 12px 0 0;
+    padding: 12px 16px 8px 16px;
+    margin-bottom: 12px;
+}
+.mentor-bot-card .mentor-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+.mentor-bot-card .mentor-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e3eafd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mentor-bot-card .message-preview {
+    margin: 0 0 18px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.mentor-bot-card .message-bubble {
+    background: #2196f3;
+    color: #fff;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    position: relative;
+    max-width: 90%;
+}
+.mentor-bot-card .message-bubble:after {
+    content: '';
+    position: absolute;
+    left: 24px;
+    bottom: -12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #2196f3;
+    border-left: 12px solid transparent;
+}
+#askMentorBot {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin-top: 18px;
+    transition: background 0.2s;
+}
+#askMentorBot:hover {
+    background: #1769aa;
+}

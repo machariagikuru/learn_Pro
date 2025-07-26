@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro | Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .today {
+            background-color: #0088ff !important;
+            color: rgb(255, 255, 255) !important;
+            font-weight: bold !important;
+            border-radius: 50% !important;
+            text-align: center !important;
+        }        
+    </style>
+    <link rel="stylesheet" href="assets/css/preloader.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-light p-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="text-decoration-none" style="display:inline-flex;">
+                    <img src="assets/images/logo.png" alt="logo" id="logo">
+                    <h2 class="text-primary fw-bold">LearnPro</h2>
+                </a>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active text-white bg-primary rounded"><i class="fas fa-th-large me-2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item"><a href="courses.html" class="nav-link text-muted"><i class="fas fa-book me-2"></i> Courses</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted"><i class="fas fa-cog me-2"></i> Settings</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted"><i class="fas fa-sign-out-alt me-2"></i> Log Out</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="content p-4 flex-grow-1">
+            <header class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h4>Hello, <span class="text-primary">User</span> 👋</h4>
+                    <h6 class="text-secondary">Let's learn something new today!</h6>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex">
+                        <input type="text" class="form-control me-2" placeholder="Search from courses...">
+                        <a href="javascript:void(0)" class="btn btn-secondary px-2 rounded-5">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-white notification-bell border border-2">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="badge"></span>
+                    </a>
+                </div>
+            </header>
+            <hr>
+            <div class="row mt-5">
+                <!-- Statistics Card -->
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h5>Statistics</h5>
+                        <hr>
+                        <div class="circle-progress">
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#ddd" stroke-width="10" fill="none"></circle>
+                                <circle cx="50" cy="50" r="40" stroke="#007bff" stroke-width="10" fill="none" stroke-dasharray="251.2" stroke-dashoffset="62.8"></circle>
+                            </svg>
+                            <h2>75%</h2>
+                        </div>
+                        <p>Tasks & Exam: 70%</p>
+                        <p>Quiz: 85%</p>
+                        <p>Absence: 90%</p>
+                    </div>
+                </div>
+                
+                <!-- Mentor Bot -->
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Mentor Bot</h5>
+                        <hr>
+                        <div class="alert alert-primary">
+                            MentorBot Empowering Students through Internships, Marketing, Certification Courses, and Cybersecurity Workshops, etc.
+                        </div>
+                        <button class="btn btn-primary">Ask</button>
+                    </div>
+                </div>
+                
+                <!-- Calendar -->
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Calendar</h5>
+                        <div class="table-responsive">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <!-- Task & Deadline -->
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Task & Deadline</h5>
+                        <hr>
+                        <img src="assets/images/task-deadline.jpg" class="img-fluid rounded mb-2">
+                        <ul>
+                            <li>Understanding the tools in Figma</li>
+                            <li>Understand the basics of making designs</li>
+                            <li>Design a mobile application with Figma</li>
+                        </ul>
+                        <p>Deadline: <span class="text-danger">1 Hour</span></p>
+                        <button class="btn btn-primary">Go to Detail</button>
+                    </div>
+                </div>
+                
+                <!-- Enrolled Courses -->
+                <div class="col-md-8">
+                    <div class="card p-3">
+                        <h5>Enrolled Courses</h5>
+                        <hr>
+                        <div class="d-flex flex-wrap">
+                            <div class="course-item m-2">
+                                <a href="./courses-page/ui_ux.html" class="text-decoration-none" style="color: inherit;">
+                                    <img src="assets/images/ui-ux.webp" class="img-fluid rounded w-75">
+                                    <p>UI/UX Design</p>
+                                </a>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/js.png" class="img-fluid rounded w-75">
+                                <p>Web Development - JavaScript</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/python.png" class="img-fluid rounded w-50">
+                                <p>Python Fundamentals</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/digital-marketing.jpeg" class="img-fluid rounded w-75">
+                                <p>Digital Marketing</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/fin-tech.webp" class="img-fluid rounded w-75">
+                                <p>Fin Tech</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/java.png" class="img-fluid rounded w-75">
+                                <p>Java Fundamentals & OOP</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/c-sharp.jpg" class="img-fluid rounded w-75">
+                                <p>Introduction to C#</p>
+                            </div>
+                            <div class="course-item m-2">
+                                <img src="assets/images/html-css.webp" class="img-fluid rounded w-75">
+                                <p>HTML & CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <!-- Top Courses -->
+                <div class="col-md-12">
+                    <div class="card p-3">
+                        <h5>Top Courses</h5>
+                        <h6 class="text-secondary">Top in 2024</h6>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="w-25">Rank</th>
+                                        <th class="w-25">Name</th>
+                                        <th>Hours</th>
+                                        <th>Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="w-25">1</td>
+                                        <td class="w-25"><img src="assets/images/html-css.webp" id="top-course-item" class="rounded"> HTML & CSS</td>
+                                        <td>28</td>
+                                        <td>4.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-25">2</td>
+                                        <td class="w-25">
+                                            <a href="./courses-page/ui_ux.html" class="text-decoration-none" style="color: inherit;">
+                                                <img src="assets/images/ui-ux.webp" id="top-course-item" class="rounded"> UI/UX Design
+                                            </a>
+                                        </td>
+                                        <td>73.5</td>
+                                        <td>4.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-25">3</td>
+                                        <td class="w-25"><img src="assets/images/js.png" id="top-course-item" class="rounded"> Web Development - JavaScript</td>
+                                        <td>150</td>
+                                        <td>4.9</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const calendar = document.getElementById("calendar");
+            calendar.innerHTML = "<p>📅 Calendar will be here</p>";
+        });
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/calendar.js"></script>
+    <!-- Preloader Hide Script -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("preloader").style.display = "none";
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
