@@ -10,7 +10,7 @@ class AddVideoToLessonsTable extends Migration
     {
         Schema::table('lessons', function (Blueprint $table) {
             // Adding a nullable string column "video" to store video information (e.g., URL or file path)
-            $table->string('video')->nullable()->after('video_url');
+            $table->string('video')->nullable();
         });
     }
 
